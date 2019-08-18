@@ -6,12 +6,37 @@
         <title>Basic HTML document</title> <!-- Shown on the tab bar-->
     </head>
     <body> <!-- other core part of HTML... uses browser default rendering if no CSS provided-->
-        <h1>Page content</h1> <!-- Top level heading tag-->
+        <h1>Page content, Largest Heading Size</h1> <!-- Top level heading tag-->
         <p>The main page content appears inside the <b>body</b> <!-- b for bold tag--> tag. HTML contains several elements that allow you to properly structure and format your content.<p> <!-- p for paragraph tag-->
         <a href="https://www.google.com">This is a link to Google</a> <!-- a for anchor tag for hyperlinks, href is the link, the stuff inside the tag is seen on the browser-->
-
+        <br><!-- line break tag--><br>
+        unformatted text
+        <br>
+        <pre>Preformatted text</pre><!-- Often used for showing code, is often monospaced font but depends on browser-->
+        <h6>Smallest Heading Size</h6><!-- Can look very different with CSS...-->
+        <p>Some more <i>text</i> here</p><!-- i for italics tag-->
+        <p>Using <em>logical</em> tag "emphasis" instead of presentational tags(b, i)</p><!-- emphasis is read by computer differently, ex. text to speech will put emphasis on the word and often the default is italicized-->
+        <p>Using <strong>logical</strong> tag "strong" instead of presentational tags</p><!-- strong is often defaulted to bold-->
+        <br style = "line-height:20px;"><!-- br for line break tag, but CSS might do this better-->
+        <hr>
+        <h1>Separating Information</h1>
+        <h2>Subheading with h2 tag</h2>
+        <h3>Adding headings</h3>
+        <p>Here is some text under the first subheading. Headings help define structure and hierarchy of content. They should be used consistently to plan out the website. Don't SKIP a series of headings (i.e. always go in order from h1, h2, ... and don't jump to hx+2).</p>
+        <h3>Using Paragraphs</h3>
+        <p>Use the paragraph tag (&lang;p&rang;) for each block or paragraph of text.</p>
+        <p>Every new paragraph should have its own set of tags.</p>
+        <h3>Line Breaks</h3>
+        <p>The line break tag (&lang;br&rang;) makes a new line without a new paragraph, known as a "soft return". These are inline (can be used within headers an paragraphs and do NOT require a closing tag).</p>
+        <h3>Northeastern University Address</h3>
+        <p>Justin Zhang
+            <br>360 Huntington Avenue
+            <br>Boston, MA 02115</p>
     </body>
 </html>
 
 <!-- In html4, block-level content model refers to how adding additional paragraphs all adds new "blocks" of paragraphs, while inline content model refers to how you can modify text inside of text-->
 <!-- In html5, there is Flow, Metadata, Embedded, Interactive, Heading, Phrasing, and Sectioning-->
+<!-- Use headings based on the content hierarchy, not the size. CSS is designed to take care of all styling/visual formatting-->
+<!-- The browser will often have some default formatting which can make it LOOK like the info is formatted how you want, when it actually isn't-->
+<!-- XML required a closing tag <p />(self-closing), but HTML does nto require it-->

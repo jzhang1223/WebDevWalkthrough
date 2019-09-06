@@ -17,7 +17,7 @@
         <p>Some more <i>text</i> here</p><!-- i for italics tag-->
         <p>Using <em>logical</em> tag "emphasis" instead of presentational tags(b, i)</p><!-- emphasis is read by computer differently, ex. text to speech will put emphasis on the word and often the default is italicized-->
         <p>Using <strong>logical</strong> tag "strong" instead of presentational tags</p><!-- strong is often defaulted to bold-->
-        <br style = "line-height:20px;"><!-- br for line break tag, but CSS might do this better-->
+        <br style = "line-height:20px;"><!-- br for line break tag (forces a hard return), but CSS might do this better-->
         <hr>
         <h1>Separating Information</h1>
         <h2>Subheading with h2 tag</h2>
@@ -29,9 +29,20 @@
         <h3>Line Breaks</h3>
         <p>The line break tag (&lang;br&rang;) makes a new line without a new paragraph, known as a "soft return". These are inline (can be used within headers an paragraphs and do NOT require a closing tag).</p>
         <h3>Northeastern University Address</h3>
-        <p>Justin Zhang
-            <br>360 Huntington Avenue
-            <br>Boston, MA 02115</p>
+        <p>Justin Zhang<br>360 Huntington Avenue<br>Boston, MA 02115</p>
+        <hr>
+        <br style = "line-height:20px;">
+
+        <!-- the b tag is PURELY VISUAL... does not have any symantic value-->
+        <dt><b>The Bold Tag</b></dt><!-- dt is for the term of a list-->
+        <dd>This is the <em>definition</em> here... And this is one <b>bolded</b> word.</dd><!-- dd is for the definition of the term in the list-->
+        <dt><strong>The Strong Tag</strong></dt>
+        <dd>This looks just like the bold tag... but it actually has some meaning. This will affect screen readers and other interpreters. Originally the b tag was removed, but HTML5 brought it back because there could be cases where you wanted to bold something but not interpret it strongly.</dd>
+        <dt><i>The Italic Tag</i></dt>
+        <dd>This i tag makes text italicized.</dd>
+        <dt><em>The Emphasis Tag</em></dt>
+        <dd>This looks just like the <i>i</i> tag above, but the text is actually emphasized more than the text around it symantically. Although this tag is usually rendered in <i>italics</i>, it shouldn't be used in place of the italics tag, rather it should be used for text that needs to be emphasized for some reason.</dd>
+        <p>Essentially, one set of tags is <em>presentational</em>, while the other is <em>logical</em>
     </body>
 </html>
 

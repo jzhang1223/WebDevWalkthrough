@@ -1,57 +1,71 @@
 <!doctype html> <!-- sets the HTML5 standard (very common)-->
-<html lang="en"> <!-- sets language to english (convenience, good for text to speech stuff)-->
-    <head> <!-- core part of HTML to establish file rules-->
-        <meta charset="utf-8"> <!-- sets character encoding, can't always rely on others to set this-->
-        <meta name="description" content="A page for exploring HTML documents"> <!-- used to be used for search engines but weren't always honest... should still be used for personal-->
-        <title>Basic HTML document</title> <!-- Shown on the tab bar-->
-    </head>
-    <body> <!-- other core part of HTML... uses browser default rendering if no CSS provided-->
-        <h1>Page content, Largest Heading Size</h1> <!-- Top level heading tag-->
-        <p>The main page content appears inside the <b>body</b> <!-- b for bold tag--> tag. HTML contains several elements that allow you to properly structure and format your content.<p> <!-- p for paragraph tag-->
-        <a href="https://www.google.com">This is a link to Google</a> <!-- a for anchor tag for hyperlinks, href is the link, the stuff inside the tag is seen on the browser-->
-        <br><!-- line break tag--><br>
-        unformatted text
-        <br>
-        <pre>Preformatted text</pre><!-- Often used for showing code, is often monospaced font but depends on browser-->
-        <h6>Smallest Heading Size</h6><!-- Can look very different with CSS...-->
-        <p>Some more <i>text</i> here</p><!-- i for italics tag-->
-        <p>Using <em>logical</em> tag "emphasis" instead of presentational tags(b, i)</p><!-- emphasis is read by computer differently, ex. text to speech will put emphasis on the word and often the default is italicized-->
-        <p>Using <strong>logical</strong> tag "strong" instead of presentational tags</p><!-- strong is often defaulted to bold-->
-        <br style = "line-height:20px;"><!-- br for line break tag (forces a hard return), but CSS might do this better-->
-        <hr>
-        <h1>Separating Information</h1>
-        <h2>Subheading with h2 tag</h2>
-        <h3>Adding headings</h3>
-        <p>Here is some text under the first subheading. Headings help define structure and hierarchy of content. They should be used consistently to plan out the website. Don't SKIP a series of headings (i.e. always go in order from h1, h2, ... and don't jump to hx+2).</p>
-        <h3>Using Paragraphs</h3>
-        <p>Use the paragraph tag (&lang;p&rang;) for each block or paragraph of text.</p>
-        <p>Every new paragraph should have its own set of tags.</p>
-        <h3>Line Breaks</h3>
-        <p>The line break tag (&lang;br&rang;) makes a new line without a new paragraph, known as a "soft return". These are inline (can be used within headers an paragraphs and do NOT require a closing tag).</p>
-        <h3>Northeastern University Address</h3>
-        <p>Justin Zhang<br>360 Huntington Avenue<br>Boston, MA 02115</p>
-        <hr>
-        <br style = "line-height:20px;">
+<html lang="en">
+<!-- sets language to english (convenience, good for text to speech stuff)-->
 
-        <!-- the b tag is PURELY VISUAL... does not have any symantic value-->
-        <dl><h1>Tags</h1><!-- dl is for description list
-            <dt><b>The Bold Tag</b></dt><!-- dt is for the description term of a list-->
-            <dd>This is the <em>definition</em> here... And this is one <b>bolded</b> word.</dd><!-- dd is for the description definition of the term in the list-->
-            <dt><strong>The Strong Tag</strong></dt>
-                <dd>This looks just like the bold tag... but it actually has some meaning. This will affect screen readers and other interpreters. Originally the b tag was removed, but HTML5 brought it back because there could be cases where you wanted to bold something but not interpret it strongly.</dd>
-            <dt><i>The Italic Tag</i></dt>
+<head>
+    <!-- core part of HTML to establish file rules-->
+    <meta charset="utf-8"> <!-- sets character encoding, can't always rely on others to set this-->
+    <meta name="description" content="A page for exploring HTML documents"> <!-- used to be used for search engines but weren't always honest... should still be used for personal-->
+    <title>Basic HTML document</title> <!-- Shown on the tab bar-->
+</head>
+
+<body>
+    <!-- other core part of HTML... uses browser default rendering if no CSS provided-->
+    <h1>Page content, Largest Heading Size</h1> <!-- Top level heading tag-->
+    <p>The main page content appears inside the <b>body</b> <!-- b for bold tag--> tag. HTML contains several elements that allow you to properly structure and format your content.<p>
+            <!-- p for paragraph tag-->
+            <a href="https://www.google.com">This is a link to Google</a> <!-- a for anchor tag for hyperlinks, href is the link, the stuff inside the tag is seen on the browser-->
+            <br><!-- line break tag--><br>
+            unformatted text
+            <br>
+            <pre>Preformatted text</pre><!-- Often used for showing code, is often monospaced font but depends on browser-->
+            <h6>Smallest Heading Size</h6><!-- Can look very different with CSS...-->
+            <p>Some more <i>text</i> here</p><!-- i for italics tag-->
+            <p>Using <em>logical</em> tag "emphasis" instead of presentational tags(b, i)</p><!-- emphasis is read by computer differently, ex. text to speech will put emphasis on the word and often the default is italicized-->
+            <p>Using <strong>logical</strong> tag "strong" instead of presentational tags</p><!-- strong is often defaulted to bold-->
+            <br style="line-height:20px;"><!-- br for line break tag (forces a hard return), but CSS might do this better-->
+            <hr>
+            <h1>Separating Information</h1>
+            <h2>Subheading with h2 tag</h2>
+            <h3>Adding headings</h3>
+            <p>Here is some text under the first subheading. Headings help define structure and hierarchy of content. They should be used consistently to plan out the website. Don't SKIP a series of headings (i.e. always go in order from h1, h2, ...
+                and don't jump to hx+2).</p>
+            <h3>Using Paragraphs</h3>
+            <p>Use the paragraph tag (&lang;p&rang;) for each block or paragraph of text.</p>
+            <p>Every new paragraph should have its own set of tags.</p>
+            <h3>Line Breaks</h3>
+            <p>The line break tag (&lang;br&rang;) makes a new line without a new paragraph, known as a "soft return". These are inline (can be used within headers an paragraphs and do NOT require a closing tag).</p>
+            <h3>Northeastern University Address</h3>
+            <p>Justin Zhang<br>360 Huntington Avenue<br>Boston, MA 02115</p>
+            <hr>
+            <br style="line-height:20px;">
+
+            <!-- the b tag is PURELY VISUAL... does not have any symantic value-->
+            <dl>
+                <h1>Tags</h1>
+                <!-- dl is for description list-->
+                <dt><b>The Bold Tag</b></dt><!-- dt is for the description term of a list-->
+                <dd>This is the <em>definition</em> here... And this is one <b>bolded</b> word.</dd><!-- dd is for the description definition of the term in the list-->
+                <dt><strong>The Strong Tag</strong></dt>
+                <dd>This looks just like the bold tag... but it actually has some meaning. This will affect screen readers and other interpreters. Originally the b tag was removed, but HTML5 brought it back because there could be cases where you
+                    wanted to bold something but not interpret it strongly.</dd>
+                <dt><i>The Italic Tag</i></dt>
                 <dd>This i tag makes text italicized.</dd>
-            <dt><em>The Emphasis Tag</em></dt>
-                <dd>This looks just like the <i>i</i> tag above, but the text is actually emphasized more than the text around it symantically. Although this tag is usually rendered in <i>italics</i>, it shouldn't be used in place of the italics tag, rather it should be used for text that needs to be emphasized for some reason.</dd>
-        </dl>
-        <p>Essentially, one set of tags is <em>presentational</em>, while the other is <em>logical</em>
-        <dl>
-        <dt>Named Character Entities<dt>
-            <dd>Use &amp; followed by the <strong>named entity</strong>. Other examples are &quot;&amp;copy&semi;&quot; for &copy; and &quot;&amp;trade&semi;&quot; for &trade;.</dd>
-        <dt>Whitespace</dt>
-            <dd>Only the first whitespace after a word is used, unless the &quot;&amp;nbsp&semi;&quot; named entity is explicitly designated for more whitespace like this [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] However, do <strong>NOT</strong> use this for formatting! (use CSS <em>of course</em>).
-        </dt>
-    </body>
+                <dt><em>The Emphasis Tag</em></dt>
+                <dd>This looks just like the <i>i</i> tag above, but the text is actually emphasized more than the text around it symantically. Although this tag is usually rendered in <i>italics</i>, it shouldn't be used in place of the italics tag,
+                    rather it should be used for text that needs to be emphasized for some reason.</dd>
+            </dl>
+            <p>Essentially, one set of tags is <em>presentational</em>, while the other is <em>logical</em>
+                <dl>
+                    <dt>Named Character Entities</dt>
+                    <dd>Use &amp; followed by the <strong>named entity</strong>. Other examples are &quot;&amp;copy&semi;&quot; for &copy; and &quot;&amp;trade&semi;&quot; for &trade;.</dd>
+                    <dt>Whitespace</dt>
+                    <dd>Only the first whitespace after a word is used, unless the &quot;&amp;nbsp&semi;&quot; named entity is explicitly designated for more whitespace like this [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] However, do <strong>NOT</strong> use
+                        this for formatting! (use CSS <em>of course</em>).</dd>
+                </dl>
+                <h1>Inserting Images</h1>
+
+</body>
 </html>
 
 <!-- In html4, block-level content model refers to how adding additional paragraphs all adds new "blocks" of paragraphs, while inline content model refers to how you can modify text inside of text-->

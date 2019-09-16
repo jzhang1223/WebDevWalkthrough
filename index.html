@@ -34,17 +34,23 @@
         <br style = "line-height:20px;">
 
         <!-- the b tag is PURELY VISUAL... does not have any symantic value-->
-        <dt><b>The Bold Tag</b></dt><!-- dt is for the term of a list-->
-        <dd>This is the <em>definition</em> here... And this is one <b>bolded</b> word.</dd><!-- dd is for the definition of the term in the list-->
-        <dt><strong>The Strong Tag</strong></dt>
-        <dd>This looks just like the bold tag... but it actually has some meaning. This will affect screen readers and other interpreters. Originally the b tag was removed, but HTML5 brought it back because there could be cases where you wanted to bold something but not interpret it strongly.</dd>
-        <dt><i>The Italic Tag</i></dt>
-        <dd>This i tag makes text italicized.</dd>
-        <dt><em>The Emphasis Tag</em></dt>
-        <dd>This looks just like the <i>i</i> tag above, but the text is actually emphasized more than the text around it symantically. Although this tag is usually rendered in <i>italics</i>, it shouldn't be used in place of the italics tag, rather it should be used for text that needs to be emphasized for some reason.</dd>
+        <dl><h1>Tags</h1><!-- dl is for description list
+            <dt><b>The Bold Tag</b></dt><!-- dt is for the description term of a list-->
+            <dd>This is the <em>definition</em> here... And this is one <b>bolded</b> word.</dd><!-- dd is for the description definition of the term in the list-->
+            <dt><strong>The Strong Tag</strong></dt>
+                <dd>This looks just like the bold tag... but it actually has some meaning. This will affect screen readers and other interpreters. Originally the b tag was removed, but HTML5 brought it back because there could be cases where you wanted to bold something but not interpret it strongly.</dd>
+            <dt><i>The Italic Tag</i></dt>
+                <dd>This i tag makes text italicized.</dd>
+            <dt><em>The Emphasis Tag</em></dt>
+                <dd>This looks just like the <i>i</i> tag above, but the text is actually emphasized more than the text around it symantically. Although this tag is usually rendered in <i>italics</i>, it shouldn't be used in place of the italics tag, rather it should be used for text that needs to be emphasized for some reason.</dd>
+        </dl>
         <p>Essentially, one set of tags is <em>presentational</em>, while the other is <em>logical</em>
+        <dl>
         <dt>Named Character Entities<dt>
-            <dd>Use &amp followed by the <strong>named entity</strong>. Other examples are &quot;&amp;copy&semi;&quot; for &copy; and &quot;&amp;trade&semi;&quot; for &trade;.</dd>
+            <dd>Use &amp; followed by the <strong>named entity</strong>. Other examples are &quot;&amp;copy&semi;&quot; for &copy; and &quot;&amp;trade&semi;&quot; for &trade;.</dd>
+        <dt>Whitespace</dt>
+            <dd>Only the first whitespace after a word is used, unless the &quot;&amp;nbsp&semi;&quot; named entity is explicitly designated for more whitespace like this [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] However, do <strong>NOT</strong> use this for formatting! (use CSS <em>of course</em>).
+        </dt>
     </body>
 </html>
 

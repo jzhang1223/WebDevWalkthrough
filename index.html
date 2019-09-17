@@ -7,6 +7,7 @@
     <meta charset="utf-8"> <!-- sets character encoding, can't always rely on others to set this-->
     <meta name="description" content="A page for exploring HTML documents"> <!-- used to be used for search engines but weren't always honest... should still be used for personal-->
     <title>Basic HTML document</title> <!-- Shown on the tab bar-->
+    <link rel="stylesheet" type="text/css" href="practiceStyle.css" />
 </head>
 
 <body>
@@ -64,6 +65,13 @@
                         this for formatting! (use CSS <em>of course</em>).</dd>
                 </dl>
                 <h1>Inserting Images</h1>
+                <div>
+                    <img src="html5.svg" alt="HTML 5 logo" /><!-- src is the file path from the current directory-->
+                    <!-- alt attribute is the alternative text, a small description for accessability-->
+                    <!-- height and width can also be given, which can distort the image... probably better done with scaling the image through css-->
+                    <img src="images/elephant.jpg" alt="A very cute elephant" />
+                    <!-- align attribute (left, right, etc. has been deprecated to be done by CSS instead)-->
+                </div>
 
 </body>
 </html>

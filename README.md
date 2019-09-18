@@ -6,7 +6,7 @@ Created by Justin Zhang
 
 This is my walkthrough of the [HTML Essential Training](https://www.linkedin.com/learning/html-essential-training) on LinkedInLearning.
 
-This is also a way for me to try Markdown.
+This is also a way for me to try [Markdown](https://www.markdownguide.org/basic-syntax/).
 
 ## Folders
 

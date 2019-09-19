@@ -36,7 +36,7 @@ For this challenge you’ll be planning and implementing a formatting strategy f
 	     c.	Scroll down until you locate the paragraph “Shortly After the 1.0 specification…” At the beginning of that paragraph insert an image that:
                   i.	points to the 200px-W3C_icon.png in the _images directory
                   ii.	uses the alt text “W3C logo”
-		  iii.	passes the value of 200 for width, and 136 for height
-		  iv.	applies a class of “flowLeft”
+		          iii.	passes the value of 200 for width, and 136 for height
+		          iv.	applies a class of “flowLeft”
 
 When you're finished, open up the same files from the "finished_files" directory and compare your results with mine. Do they match? Were there times when you disagreed with the strategy I used for headers, creating lists, or emphasizing text? Often these decisions are judgment calls, and don't necessarily have a "right" answer. What's important is that you have a sound reason for making the decision you did that's based on valid, semantic HTML. For more practice, go through the files and compare your formatting to the existing formatting. Is it consistent? Is the formatting what you expect, or would you make changes?

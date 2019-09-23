@@ -12,39 +12,63 @@
 
 <body>
     <!-- other core part of HTML... uses browser default rendering if no CSS provided-->
-    <h1>Page content, Largest Heading Size</h1> <!-- Top level heading tag-->
-    <p>The main page content appears inside the <b>body</b> <!-- b for bold tag--> tag. HTML contains several elements that allow you to properly structure and format your content.<p>
-            <!-- p for paragraph tag-->
-            <a href="https://www.google.com">This is a link to Google</a> <!-- a for anchor tag for hyperlinks, href is the link, the stuff inside the tag is seen on the browser-->
-            <br><!-- line break tag--><br>
-            unformatted text
-            <br>
-            <pre>Preformatted text</pre><!-- Often used for showing code, is often monospaced font but depends on browser-->
-            <h6>Smallest Heading Size</h6><!-- Can look very different with CSS...-->
-            <p>Some more <i>text</i> here</p><!-- i for italics tag-->
-            <p>Using <em>logical</em> tag "emphasis" instead of presentational tags(b, i)</p><!-- emphasis is read by computer differently, ex. text to speech will put emphasis on the word and often the default is italicized-->
-            <p>Using <strong>logical</strong> tag "strong" instead of presentational tags</p><!-- strong is often defaulted to bold-->
-            <br style="line-height:20px;"><!-- br for line break tag (forces a hard return), but CSS might do this better-->
-            <hr>
-            <h1>Separating Information</h1>
-            <h2>Subheading with h2 tag</h2>
-            <h3>Adding headings</h3>
-            <p>Here is some text under the first subheading. Headings help define structure and hierarchy of content. They should be used consistently to plan out the website. Don't SKIP a series of headings (i.e. always go in order from h1, h2, ...
+    <h1>Informative HTML Page</h1>
+    <article>
+        <section>
+            <!-- should probably put headings inside of section or section tags-->
+            <h2>Miscellaneous information</h2> <!-- Top level heading tag... there should probably just be one h2 tag per page for organizational purposes-->
+            <nav>
+                <p>
+                    site naviagtion placeholder
+                </p>
+            </nav>
+            <p>The main page content appears inside the <b>body</b> <!-- b for bold tag--> tag. HTML contains several elements that allow you to properly structure and format your content.<p>
+                    <!-- p for paragraph tag-->
+                    <a href="https://www.google.com">This is a link to Google</a> <!-- a for anchor tag for hyperlinks, href is the link, the stuff inside the tag is seen on the browser-->
+                    <br><!-- line break tag--><br>
+                    unformatted text
+                    <br>
+                    <pre>Preformatted text</pre><!-- Often used for showing code, is often monospaced font but depends on browser-->
+                    <h6>Smallest Heading Size</h6><!-- Can look very different with CSS...-->
+                    <p>Some more <i>text</i> here</p><!-- i for italics tag-->
+                    <p>Using <em>logical</em> tag "emphasis" instead of presentational tags(b, i)</p><!-- emphasis is read by computer differently, ex. text to speech will put emphasis on the word and often the default is italicized-->
+                    <p>Using <strong>logical</strong> tag "strong" instead of presentational tags</p><!-- strong is often defaulted to bold-->
+                    <p>
+                        <strong>Northeastern University Address</strong>
+                    </p>
+                    <p>Justin Zhang<br>360 Huntington Avenue<br>Boston, MA 02115</p>
+        </section>
+        <hr /> <!-- this hr tag makes a horizontal line-->
+        <br style="line-height:20px;"><!-- br for line break tag (forces a hard return), but CSS might do this better-->
+        <section>
+            <h2>Separating Information</h2>
+            <h3>Subheading with h3 tag</h3>
+            <h4>Adding headings</h4>
+            <p>Here is some text under the first subheading. Headings help define structure and hierarchy of content. They should be used consistently to plan out the website. Don't SKIP a series of headings (i.e. always go in order from h2, h3, ...
                 and don't jump to hx+2).</p>
-            <h3>Using Paragraphs</h3>
+            <p>
+                Headings are one of the best ways to control document outlines.
+            </p>
+            <h4>Using Paragraphs</h4>
             <p>Use the paragraph tag (&lang;p&rang;) for each block or paragraph of text.</p>
             <p>Every new paragraph should have its own set of tags.</p>
-            <h3>Line Breaks</h3>
+            <h4>Line Breaks</h4>
             <p>The line break tag (&lang;br&rang;) makes a new line without a new paragraph, known as a "soft return". These are inline (can be used within headers an paragraphs and do NOT require a closing tag).</p>
-            <h3>Northeastern University Address</h3>
-            <p>Justin Zhang<br>360 Huntington Avenue<br>Boston, MA 02115</p>
-            <hr>
-            <br style="line-height:20px;">
-
-            <!-- the b tag is PURELY VISUAL... does not have any symantic value-->
+            <h4>Section vs. Div</h4>
+            <p>
+                The section tag denotes thematically grouped content to be put in a document outline, whereas the div tag does not convey any meaning and is generally used for styling or scripting purposes.
+            </p>
+            <p>
+                All sectioning tags (i.e. section, aside, article...) will generate headers in the outline. A sectioning tag that does not have a header will be labelled as <em>Untitled Section</em>
+            </p>
+        </section>
+        <hr>
+        <br style="line-height:20px;">
+        <section>
             <dl>
-                <h1>Tags</h1>
                 <!-- dl is for description list-->
+                <h2>Tags</h2>
+                <!-- the b tag is PURELY VISUAL... does not have any symantic value-->
                 <dt><b>The Bold Tag</b></dt><!-- dt is for the description term of a list-->
                 <dd>This is the <em>definition</em> here... And this is one <b>bolded</b> word.</dd><!-- dd is for the description definition of the term in the list-->
                 <dt><strong>The Strong Tag</strong></dt>
@@ -64,16 +88,28 @@
                     <dd>Only the first whitespace after a word is used, unless the &quot;&amp;nbsp&semi;&quot; named entity is explicitly designated for more whitespace like this [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] However, do <strong>NOT</strong> use
                         this for formatting! (use CSS <em>of course</em>).</dd>
                 </dl>
-                <h1>Inserting Images</h1>
-                <div>
-                    <img src="html5.svg" alt="HTML 5 logo" /><!-- src is the file path from the current directory-->
-                    <!-- alt attribute is the alternative text, a small description for accessability-->
-                    <!-- height and width can also be given, which can distort the image... probably better done with scaling the image through css-->
-                    <img src="images/elephant.jpg" alt="A very cute elephant" />
-                    <!-- align attribute (left, right, etc. has been deprecated to be done by CSS instead)-->
-                </div>
-
+        </section>
+        <hr>
+        <br style="line-height:20px;">
+        <section>
+            <h2>Inserting Images</h2>
+            <img src="html5.svg" alt="HTML 5 logo" /><!-- src is the file path from the current directory-->
+            <!-- alt attribute is the alternative text, a small description for accessability-->
+            <!-- height and width can also be given, which can distort the image... probably better done with scaling the image through css-->
+            <img src="images/elephant.jpg" alt="A very cute elephant" />
+            <!-- align attribute (left, right, etc. has been deprecated to be done by CSS instead)-->
+        </section>
+    </article>
+    <hr>
+    <br style="line-height:20px;">
+    <aside>
+        <!-- This sets information different from the main article-->
+        <p>
+            This is used as a note-taking and experimental attempt at learning html. This is always a work in progress.
+        </p>
+    </aside>
 </body>
+
 </html>
 
 <!-- In html4, block-level content model refers to how adding additional paragraphs all adds new "blocks" of paragraphs, while inline content model refers to how you can modify text inside of text-->
